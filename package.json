@@ -31,15 +31,20 @@
     "husky": "^9.1.7",
     "next": "15.3.2",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "sass": "^1.87.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "15.3.2",
-    "typescript": "^5"
+    "@svgr/webpack": "^8.1.0",
+    "@types/markdown-it": "^14.1.2",
+    "@types/node": "^22.10.1",
+    "@types/react": "^19.0.1",
+    "@types/react-dom": "^19.0.1",
+    "eslint": "8.57.1",
+    "eslint-config-next": "15.1.7",
+    "postcss": "^8.4.49",
+    "raw-loader": "^4.0.2",
+    "typescript": "^5.7.2"
   }
 }
