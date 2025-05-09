@@ -1,0 +1,133 @@
+@use '../../styles/settings' as *;
+
+$car-position: 500px;
+
+.home {
+  overflow: hidden;
+  height: calc(100vh - $header-height);
+
+  &__container {
+    @include container;
+    & {
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px;
+    }
+  }
+
+  &__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin: auto 0 calc($car-position - 50px) 0;
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  &__title {
+    @include titleSmall;
+    & {
+      font-family: $font-unison-pro;
+      margin: 10px 0 40px 0;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      opacity: 0.3;
+    }
+    100% {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+  }
+
+  &__button {
+    @include thinShadow;
+    & {
+      align-items: center;
+      border-radius: 50%;
+      color: $white-color;
+      display: flex;
+      justify-content: center;
+      height: 80px;
+      margin: 40px 0 0 0;
+      position: relative;
+      width: 80px;
+    }
+
+    &-icon {
+      align-items: center;
+      background-color: $black-color;
+      border: 1px solid $black-color;
+      border-radius: 50%;
+      display: flex;
+      height: 80px;
+      justify-content: center;
+      overflow: hidden;
+      transition: all 170ms ease-out;
+      width: 80px;
+
+      &:hover {
+        background-color: $white-color;
+        border: 1px solid $white-color-opacity;
+        color: $black-color;
+      }
+
+      svg {
+        height: 30px;
+        width: 30px;
+      }
+    }
+
+    &-pulse {
+      background-color: $black-flat-color-opacity;
+      border-radius: 50%;
+      position: absolute;
+      z-index: -1;
+
+      &--1 {
+        animation: pulse 2s ease infinite;
+        height: 70px;
+        width: 70px;
+      }
+
+      &--2 {
+        animation: pulse 2s $animation-bubble infinite;
+        height: 60px;
+        width: 60px;
+      }
+
+      &--3 {
+        animation: pulse 2s ease infinite;
+        height: 80px;
+        width: 80px;
+      }
+    }
+  }
+
+  &__description {
+    margin: 40px 0 0;
+  }
+
+  &__image {
+    left: 50%;
+    width: 800px;
+    position: relative;
+    transform: translate(-50%, -$car-position);
+
+    img {
+      width: 100%;
+    }
+  }
+}

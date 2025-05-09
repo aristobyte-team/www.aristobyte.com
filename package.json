@@ -1,25 +1,45 @@
 {
   "name": "aristobyte",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "AristoByte - Official website for a technology company building scalable web and mobile software products. Built with Next.js 15 App Router.",
+  "author": "dhunanyan",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhunanyan/aristobyte.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dhunanyan/aristobyte.git/issues"
+  },
+  "homepage": "https://github.com/dhunanyan/aristobyte.git#readme",
+  "keywords": [
+    "nextjs15",
+    "react",
+    "typescript",
+    "app-router",
+    "aristobyte"
+  ],
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky"
   },
   "dependencies": {
+    "husky": "^9.1.7",
+    "next": "15.3.2",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.3.2"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.3.2",
-    "@eslint/eslintrc": "^3"
+    "typescript": "^5"
   }
 }

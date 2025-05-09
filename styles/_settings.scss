@@ -1,0 +1,196 @@
+$black-color: #000000;
+$black-color-opacity: #00000068;
+$black-flat-color: #242424;
+$black-flat-color-opacity: #242424d0;
+$blue-dark-active-color: #646e7e;
+$blue-primary-color: #2278e9;
+$blue-secondary-color: #438ae7;
+$red-primary-color: #f1414c;
+$red-secondary-color: #ffdede;
+$green-primary-color: #83e17e;
+$green-secondary-color: #036800;
+$white-color: #ffffff;
+$white-dark-color: #ebebeb;
+$white-color-opacity: #ffffff44;
+$grey-dark-color: #aeaeae;
+$grey-dark-color-opacity: #aeaeae72;
+
+$whats-app-color: #4fce5d;
+$whats-app-hover-color: #5fdf6e;
+$whats-app-text-color: #f7f7f7;
+$facebook-color: #1877f2;
+$facebook-hover-color: #2988e3;
+$facebook-text-color: #f7f7e2;
+$instagram-color: #cf3981;
+$instagram-hover-color: #df4a92;
+$instagram-text-color: #f7f7f7;
+$sms-color: #221e1f;
+$sms-hover-color: #443f3f;
+$sms-text-color: #f1fff8;
+
+$gradient-black: linear-gradient(-45deg, #111111 0%, #313131 100%);
+
+$font-work-sans: var(--font-work-sans), sans-serif;
+$font-unison-pro: var(--font-unison-pro), sans-serif;
+
+$animation-accordion: cubic-bezier(0.55, -0.19, 0.59, 0.95);
+$animation-bubble: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+$bottom-padding: 34px;
+$header-height: 75px;
+$top-z-index: 9999;
+
+$media-tablet: 769px;
+
+@mixin regularShadow {
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.47);
+}
+
+@mixin lightShadow {
+  box-shadow: 0px 3px 16px -4px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 0px 3px 16px -4px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 0px 3px 16px -4px rgba(0, 0, 0, 0.47);
+}
+
+@mixin thinShadow {
+  box-shadow: 0px 2px 22px -6px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 0px 2px 22px -6px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 0px 2px 22px -6px rgba(0, 0, 0, 0.47);
+}
+
+@mixin thinnerShadow {
+  box-shadow: 3px -4px 18px -10px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 3px 4px 18px -10px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 3px -4px 18px -10px rgba(0, 0, 0, 0.47);
+}
+
+@mixin thinnerRightShadow {
+  box-shadow: 4px 10px 18px -10px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 4px 10px 18px -10px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 4px 10px 18px -10px rgba(0, 0, 0, 0.47);
+}
+
+@mixin zeroShadow {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+
+@mixin scrollbar {
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $black-color;
+    border: 3px solid $black-color;
+    cursor: pointer;
+
+    &:active {
+      background-color: $grey-dark-color;
+      border: 3px solid $grey-dark-color;
+    }
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $grey-dark-color;
+  }
+}
+
+@mixin container {
+  max-width: 1220px;
+  margin: 0 auto;
+  min-height: calc(100% - 20px * 2);
+  padding: 20px 10px;
+  transition: all 150ms linear;
+  width: calc(100% - 10px * 2);
+
+  @media screen and (min-width: 425px) {
+    min-height: calc(100% - 30px * 2);
+    padding: 30px 15px;
+    width: calc(100% - 15px * 2);
+  }
+
+  @media screen and (min-width: $media-tablet) {
+    min-height: calc(100% - 60px * 2);
+    padding: 60px 30px;
+    width: calc(100% - 30px * 2);
+  }
+}
+
+@mixin title {
+  color: $black-flat-color;
+  text-align: center;
+  font-family: $font-unison-pro;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.16px;
+  transition: all 120ms ease-out;
+
+  @media screen and (min-width: 500px) {
+    font-size: 24px;
+  }
+
+  @media screen and (min-width: $media-tablet) {
+    font-size: 32px;
+  }
+}
+
+@mixin titleSmall {
+  color: $black-flat-color;
+  text-align: center;
+  font-family: $font-work-sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 14px;
+  letter-spacing: 0.16px;
+  transition: all 120ms ease-out;
+
+  @media screen and (min-width: 500px) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media screen and (min-width: $media-tablet) {
+    font-size: 18px;
+    line-height: 16px;
+  }
+}
+
+@mixin subtitle {
+  color: $black-flat-color;
+  text-align: center;
+  font-family: $font-work-sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.16px;
+  transition: all 120ms ease-out;
+
+  @media screen and (min-width: 500px) {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  @media screen and (min-width: $media-tablet) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+@mixin description {
+  color: $grey-dark-color;
+  text-align: center;
+  font-family: $font-work-sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.14px;
+}

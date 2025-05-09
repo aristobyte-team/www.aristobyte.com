@@ -1,0 +1,1 @@
+export const NAVBAR_AUTOCLOSE_SCREEN_WIDTH = 1770;
