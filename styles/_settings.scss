@@ -43,10 +43,14 @@ $animation-bubble: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
 $border-radius-small: 6px;
 $bottom-padding: 34px;
-$header-height: 70px;
+$header-height: 90px;
 $top-z-index: 9999;
 
 $media-tablet: 769px;
+
+@mixin textRegularShadow {
+  text-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.47);
+}
 
 @mixin regularShadow {
   box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.47);

@@ -1,29 +1,25 @@
 @use "../../styles/settings" as *;
 
 .header {
-  background-color: $black-color;
-  height: $header-height;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: $top-z-index;
-
-  &::after {
-    background: linear-gradient(
-      90deg,
-      $logo-color-1,
-      $logo-color-2,
-      $logo-color-3,
-      $logo-color-4,
-      $logo-color-5
-    );
-    content: "";
-    height: 1px;
+  @include thinShadow;
+  & {
+    background-color: $black-color;
+    height: $header-height;
+    left: 0;
     position: fixed;
+    top: 0;
     width: 100%;
-    top: $header-height;
     z-index: $top-z-index;
+
+    &::after {
+      background: $logo-gradient;
+      content: "";
+      height: 1px;
+      position: fixed;
+      width: 100%;
+      top: $header-height;
+      z-index: $top-z-index;
+    }
   }
 
   &__container {
@@ -32,15 +28,15 @@
       align-items: center;
       display: flex;
       justify-content: space-between;
-      padding-bottom: 10px !important;
-      padding-top: 10px !important;
+      padding-bottom: 20px !important;
+      padding-top: 20px !important;
     }
   }
 
   &__logo {
     align-items: center;
     display: flex;
-    gap: 10px;
+    gap: 5px;
 
     &:hover {
       .header__logo {

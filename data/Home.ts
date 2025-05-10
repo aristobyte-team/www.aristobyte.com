@@ -6,13 +6,26 @@ export type HomeDataType = {
   icon: string;
   description: string;
   imageURL: string;
+  links: { id: string; href: string; text: string }[];
 };
 
 export const HomeData: HomeDataType = {
-  subtitle: "Welcome",
-  title: "Aristobyte",
-  icon: Icons.CarFront,
+  title: "Smart. Scalable. Seamless.",
+  subtitle: "Empowering Digital Progress",
   description:
-    "AristoByte is a forward-thinking software and technology company specializing in the design, development, and deployment of custom web and mobile applications.",
+    "Scalable web and mobile software tailored to help startups and businesses innovate faster, grow smarter, and operate more efficiently",
+  icon: Icons.Logo,
   imageURL: "/images/car-top-white.png",
+  links: [
+    {
+      id: "get-started",
+      href: "/get-started",
+      text: "Get started",
+    },
+    {
+      id: "our-products",
+      href: "/our-products",
+      text: "Our products",
+    },
+  ],
 };
