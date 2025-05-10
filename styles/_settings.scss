@@ -130,6 +130,39 @@ $media-tablet: 769px;
   }
 }
 
+@mixin button {
+  display: flex;
+  position: relative;
+
+  &::after {
+    background: $logo-gradient;
+    border-radius: $border-radius-small;
+    content: "";
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1.02);
+    transition: all 600ms $animation-bubble;
+    width: 100%;
+  }
+
+  &:hover::after {
+    -webkit-box-shadow: 0px 0px 27px 3px $logo-color-3;
+    -moz-box-shadow: 0px 0px 27px 3px $logo-color-3;
+    box-shadow: 0px 0px 27px 3px $logo-color-3;
+    transform: translate(-50%, -50%) scale(1.15);
+  }
+
+  span {
+    background-color: $black-color;
+    border-radius: $border-radius-small;
+    color: $white-color;
+    padding: 14px 20px;
+    z-index: 2;
+  }
+}
+
 @mixin title {
   color: $black-flat-color;
   text-align: center;

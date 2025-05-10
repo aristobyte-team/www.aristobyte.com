@@ -18,7 +18,7 @@ export const Home = () => (
         {HomeData.links.map(({ id, href, text }) => (
           <li key={id}>
             <Link href={href} className={`home__link home__link--${id}`}>
-              {text}
+              <span>{text}</span>
             </Link>
           </li>
         ))}
