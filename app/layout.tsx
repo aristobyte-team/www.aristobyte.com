@@ -2,7 +2,7 @@ import * as React from "react";
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 
-// import { Header } from "@/components";
+import { Header } from "@/components";
 import { HtmlMeta, structuredData, viewport as viewportConfig } from "@/data";
 
 import "./globals.scss";
@@ -99,6 +99,17 @@ const unisonPro = localFont({
   variable: "--font-unison-pro",
 });
 
+const righteous = localFont({
+  src: [
+    {
+      path: "./fonts/Righteous/Righteous-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-righteous",
+});
+
 export const metadata: Metadata = HtmlMeta["root"];
 
 export const viewport: Viewport = viewportConfig;
@@ -122,7 +133,10 @@ export default function RootLayout({
           content={process.env.NEXT_PUBLIC_FACEBOOK_DOMAIN_VERIFICATION}
         />
       </head>
-      <body className={`${workSans.variable} ${unisonPro.variable}`}>
+      <body
+        className={`${workSans.variable} ${unisonPro.variable} ${righteous.variable}`}
+      >
+        <Header />
         <main>{children}</main>
       </body>
     </html>

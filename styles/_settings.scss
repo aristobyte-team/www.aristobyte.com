@@ -1,19 +1,22 @@
 $black-color: #000000;
-$black-color-opacity: #00000068;
 $black-flat-color: #242424;
 $black-flat-color-opacity: #242424d0;
-$blue-dark-active-color: #646e7e;
-$blue-primary-color: #2278e9;
-$blue-secondary-color: #438ae7;
-$red-primary-color: #f1414c;
-$red-secondary-color: #ffdede;
-$green-primary-color: #83e17e;
-$green-secondary-color: #036800;
 $white-color: #ffffff;
-$white-dark-color: #ebebeb;
-$white-color-opacity: #ffffff44;
 $grey-dark-color: #aeaeae;
-$grey-dark-color-opacity: #aeaeae72;
+
+$logo-color-1: rgba(255, 238, 39);
+$logo-color-2: rgba(254, 200, 0);
+$logo-color-3: rgba(241, 142, 53);
+$logo-color-4: rgba(233, 95, 50);
+$logo-color-5: rgba(226, 49, 45);
+$logo-gradient: linear-gradient(
+  90deg,
+  $logo-color-1,
+  $logo-color-2,
+  $logo-color-3,
+  $logo-color-4,
+  $logo-color-5
+);
 
 $whats-app-color: #4fce5d;
 $whats-app-hover-color: #5fdf6e;
@@ -32,12 +35,15 @@ $gradient-black: linear-gradient(-45deg, #111111 0%, #313131 100%);
 
 $font-work-sans: var(--font-work-sans), sans-serif;
 $font-unison-pro: var(--font-unison-pro), sans-serif;
+$font-righteous: var(--font-righteous), sans-serif;
 
+$transition-standard: all 150ms ease-out;
 $animation-accordion: cubic-bezier(0.55, -0.19, 0.59, 0.95);
 $animation-bubble: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
+$border-radius-small: 6px;
 $bottom-padding: 34px;
-$header-height: 75px;
+$header-height: 70px;
 $top-z-index: 9999;
 
 $media-tablet: 769px;

@@ -1,0 +1,14 @@
+{
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "parserOptions": {
+        "warnOnUnsupportedTypeScriptVersion": false
+      },
+      "rules": {
+        "@next/next/no-img-element": "off"
+      }
+    }
+  ]
+}

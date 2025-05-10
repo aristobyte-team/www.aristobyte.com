@@ -1,5 +1,5 @@
-// import ArrowLeft from '../public/svg/i_ArrowLeft.svg';
+import Logo from "../public/svg/i_Logo.svg";
 
 export const Icons = {
-  // ArrowLeft,
+  Logo,
 } as { [key: string]: string };

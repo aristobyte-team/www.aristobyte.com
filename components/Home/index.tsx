@@ -1,9 +1,8 @@
-import * as React from 'react';
-import { HomeButton } from './HomeButton';
+import * as React from "react";
 
-import { HomeData } from '@data';
+import { HomeData } from "@/data";
 
-import './Home.scss';
+import "./Home.scss";
 
 export const Home = () => (
   <section className="home">
@@ -11,7 +10,6 @@ export const Home = () => (
       <div className="home__content">
         <h3 className="home__subtitle">{HomeData.subtitle}</h3>
         <h2 className="home__title">{HomeData.title}</h2>
-        <HomeButton />
         <p className="home__description">{HomeData.description}</p>
       </div>
     </div>
