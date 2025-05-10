@@ -1,0 +1,88 @@
+@use "../../styles/settings" as *;
+
+.features {
+  height: calc(100vh - $header-height);
+
+  &__container {
+    @include container;
+    & {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+
+  &__title {
+    @include title;
+  }
+
+  &__description {
+    @include description;
+    & {
+      margin: 0 auto;
+      max-width: 400px;
+    }
+  }
+
+  &__list {
+    align-items: space-between;
+    display: flex;
+    gap: 10px;
+  }
+
+  &__card {
+    @include regularShadow;
+    & {
+      align-items: center;
+      background-color: $black-flat-color;
+      border-radius: $border-radius-standard;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      justify-content: flex-start;
+      padding: 20px;
+      width: 25%;
+
+      &-icon {
+        @include regularShadow;
+        & {
+          border-radius: 50%;
+          display: flex;
+          overflow: hidden;
+          padding: 15px;
+          position: relative;
+          width: 50px;
+
+          &::before {
+            background: $logo-gradient;
+            content: "";
+            height: 100%;
+            left: 50%;
+            opacity: 0.2;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+          }
+
+          svg {
+            width: 100%;
+          }
+        }
+      }
+
+      &-title {
+        color: $white-color;
+        font-family: $font-righteous;
+        font-size: 32px;
+        text-align: center;
+      }
+
+      &-description {
+        @include description;
+        text-align: center;
+      }
+    }
+  }
+}

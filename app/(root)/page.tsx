@@ -2,11 +2,16 @@
 
 import * as React from "react";
 import { useTranslate } from "@/context";
-import { Home as HomeComponent } from "@/components";
+import { Hero, Features } from "@/components";
 
 import "./page.scss";
 
 export default function Home() {
   const { t } = useTranslate();
-  return <HomeComponent t={t} />;
+  return (
+    <>
+      <Hero t={t} />
+      <Features t={t} />
+    </>
+  );
 }

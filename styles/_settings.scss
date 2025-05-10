@@ -1,6 +1,6 @@
 $black-color: #000000;
-$black-flat-color: #242424;
-$black-flat-color-opacity: #242424d0;
+$black-flat-color: #1a1b22;
+$black-flat-color-opacity: #1a1b22d0;
 $white-color: #ffffff;
 $grey-dark-color: #aeaeae;
 
@@ -42,6 +42,7 @@ $animation-accordion: cubic-bezier(0.55, -0.19, 0.59, 0.95);
 $animation-bubble: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
 $border-radius-small: 6px;
+$border-radius-standard: 8px;
 $bottom-padding: 34px;
 $header-height: 90px;
 $top-z-index: 9999;
@@ -164,9 +165,9 @@ $media-tablet: 769px;
 }
 
 @mixin title {
-  color: $black-flat-color;
+  color: $white-color;
   text-align: center;
-  font-family: $font-unison-pro;
+  font-family: $font-righteous;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;

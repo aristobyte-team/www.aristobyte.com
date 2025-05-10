@@ -88,7 +88,7 @@
         position: absolute;
         top: 50%;
         transform: translate(-50%, -50%) scale(0.8);
-        transition: all 600ms $animation-bubble;
+        transition: all 600ms $animation-bubble 0ms;
         width: 100%;
       }
     }
