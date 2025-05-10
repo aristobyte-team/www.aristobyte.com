@@ -6,6 +6,7 @@ import { Header } from "@/components";
 import { HtmlMeta, structuredData, viewport as viewportConfig } from "@/data";
 
 import "./globals.scss";
+import { TranslateProvider } from "@context";
 
 const workSans = localFont({
   src: [
@@ -133,12 +134,14 @@ export default function RootLayout({
           content={process.env.NEXT_PUBLIC_FACEBOOK_DOMAIN_VERIFICATION}
         />
       </head>
-      <body
-        className={`${workSans.variable} ${unisonPro.variable} ${righteous.variable}`}
-      >
-        <Header />
-        <main>{children}</main>
-      </body>
+      <TranslateProvider>
+        <body
+          className={`${workSans.variable} ${unisonPro.variable} ${righteous.variable}`}
+        >
+          <Header />
+          <main>{children}</main>
+        </body>
+      </TranslateProvider>
     </html>
   );
 }

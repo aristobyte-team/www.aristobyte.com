@@ -1,3 +1,2 @@
 export { HtmlMeta, structuredData, viewport } from "./HtmlMeta";
-export { HomeData, type HomeDataType } from "./Home";
-export { HeaderData } from "./Header";
+export { translate, type TranslateFunctionType, Locales } from "./translations";
