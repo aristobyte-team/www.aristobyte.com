@@ -1,0 +1,54 @@
+@use "../../styles/settings" as *;
+
+.chart {
+  display: flex;
+  max-width: 400px;
+
+  &__tooltip {
+    @include regularShadow;
+    & {
+      align-items: center;
+      background-color: #1a1b22;
+      border: none;
+      border-radius: 6px;
+      color: $white-color;
+      display: flex;
+      font-family: $font-righteous;
+      flex-direction: column;
+      gap: 5px;
+      padding: $border-radius-small;
+    }
+
+    &-icon {
+      display: flex;
+      max-width: 30px;
+
+      svg {
+        width: 100%;
+      }
+    }
+
+    &-label {
+      font-size: 18px;
+    }
+
+    &-list {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5px;
+      width: 100%;
+    }
+
+    &-item {
+      width: 100%;
+      p {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        width: 100%;
+      }
+    }
+  }
+}
