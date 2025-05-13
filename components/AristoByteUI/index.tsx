@@ -1,25 +1,27 @@
+"use client";
+
 import * as React from "react";
 
-import { Gradient } from "@components";
-import { TranslateFunctionType } from "@/data";
+import { Gradient } from "@/components";
+import { useTranslate } from "@/context";
 
 import "./AristoByteUI.scss";
 
-export type FeaturesPropsType = {
-  t: TranslateFunctionType;
-};
+export const AristoByteUI = () => {
+  const { t } = useTranslate();
 
-export const AristoByteUI = ({ t }: FeaturesPropsType) => (
-  <section className="aristobyte-ui">
-    <div className="aristobyte-ui__container">
-      <div className="aristobyte-ui__content">
-        <Gradient id="aristobyte-ui" />
+  return (
+    <section className="aristobyte-ui">
+      <div className="aristobyte-ui__container">
+        <div className="aristobyte-ui__content">
+          <Gradient id="aristobyte-ui" />
 
-        <h2 className="aristobyte-ui__title">{t(`aristobyte-ui.title`)}</h2>
-        <p className="aristobyte-ui__description">
-          {t(`aristobyte-ui.description`)}
-        </p>
+          <h2 className="aristobyte-ui__title">{t(`aristobyte-ui.title`)}</h2>
+          <p className="aristobyte-ui__description">
+            {t(`aristobyte-ui.description`)}
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
