@@ -1,2 +1,2 @@
 export { Icons } from "./icons";
-export { NAVBAR_AUTOCLOSE_SCREEN_WIDTH } from "./constants";
+export { NAVBAR_AUTOCLOSE_SCREEN_WIDTH, HEADER_SIZE } from "./constants";

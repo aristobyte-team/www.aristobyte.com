@@ -1,0 +1,5 @@
+@use "../../styles/settings" as *;
+
+.scroll-link {
+  @include button;
+}

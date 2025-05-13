@@ -4,8 +4,8 @@ export const Config = {
   header: {
     logo: Icons.Logo,
     nav: [
-      { id: "our-product", href: "/our-products" },
-      { id: "company", href: "/company" },
+      { id: "ui", href: "/ui" },
+      { id: "apps", href: "/apps" },
       { id: "insights", href: "/insights" },
       { id: "contact", href: "/contact" },
     ],
@@ -13,8 +13,8 @@ export const Config = {
   hero: {
     icon: Icons.Logo,
     links: [
-      { id: "get-started", href: "/#features" },
-      { id: "our-products", href: "/our-products" },
+      { id: "get-started", href: "features" },
+      { id: "apps", href: "apps" },
     ],
   },
   features: {

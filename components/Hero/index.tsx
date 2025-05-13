@@ -1,7 +1,6 @@
 import * as React from "react";
-import Link from "next/link";
 
-import { Gradient } from "@components";
+import { Gradient, ScrollLink } from "@components";
 import { TranslateFunctionType } from "@/data";
 import { Config } from "@/config";
 
@@ -27,10 +26,10 @@ export const Hero = ({ t }: HeroPropsType) => (
       </div>
       <ul className="hero__links">
         {Config.hero.links.map(({ id, href }) => (
-          <li key={id}>
-            <Link href={href} className={`hero__link hero__link--${id}`}>
+          <li key={id} className={`hero__item hero__item--${id}`}>
+            <ScrollLink to={href} smooth={true} duration={500}>
               <span>{t(`hero.links.${id}`)}</span>
-            </Link>
+            </ScrollLink>
           </li>
         ))}
       </ul>

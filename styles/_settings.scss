@@ -132,6 +132,7 @@ $media-tablet: 769px;
 }
 
 @mixin button {
+  cursor: pointer;
   display: flex;
   position: relative;
 

@@ -33,6 +33,7 @@
     "next": "15.3.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-scroll": "^1.9.3",
     "sass": "^1.87.0"
   },
   "devDependencies": {
@@ -41,6 +42,7 @@
     "@types/node": "^22.10.1",
     "@types/react": "^19.0.1",
     "@types/react-dom": "^19.0.1",
+    "@types/react-scroll": "^1.8.10",
     "eslint": "8.57.1",
     "eslint-config-next": "15.1.7",
     "postcss": "^8.4.49",

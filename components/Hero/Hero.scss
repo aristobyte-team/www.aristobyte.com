@@ -66,13 +66,9 @@
     height: auto;
     gap: 20px;
     margin: 0 auto;
-
-    > li {
-      display: flex;
-    }
   }
 
-  &__link {
-    @include button;
+  &__item {
+    display: flex;
   }
 }
