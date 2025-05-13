@@ -31,7 +31,7 @@ export const Gradient = ({
         .split(" ")
         .map((c) => `gradient--${c}`)
         .join(" ")}`}
-      initial={{ opacity: 0 }}
+      initial={{ opacity: 0.6 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.15 }}
       viewport={{ once: false }}

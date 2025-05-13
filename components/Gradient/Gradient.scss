@@ -31,23 +31,27 @@
     bottom: 0;
   }
 
-  &--aristobyte-ui {
+  &--idee {
+    bottom: -100%;
     height: 80%;
+    right: 0%;
     width: 20%;
     z-index: -1;
+  }
 
-    &--1 {
-      bottom: -50%;
-    }
+  &--aristobyte-ui {
+    bottom: -50%;
+    height: 80%;
+    left: 0%;
+    width: 20%;
+    z-index: -1;
+  }
 
-    &--2 {
-      bottom: -100%;
-      right: 0%;
-    }
-
-    &--3 {
-      left: 0%;
-      bottom: -150%;
-    }
+  &--component-stack {
+    bottom: -120%;
+    height: 80%;
+    left: 20%;
+    width: 20%;
+    z-index: -1;
   }
 }
