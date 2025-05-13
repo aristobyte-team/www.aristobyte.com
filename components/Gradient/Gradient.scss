@@ -1,0 +1,53 @@
+@use "../../styles/settings" as *;
+
+@keyframes glow {
+  0%,
+  20% {
+    transform: translate3d(0px, -190%, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    animation-timing-function: $animation-bubble;
+  }
+  100% {
+    transform: translate3d(0px, -140%, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    animation-timing-function: $animation-bubble;
+  }
+}
+
+.gradient {
+  animation: glow 10s infinite alternate;
+  background-image: $logo-gradient;
+  filter: blur(150px);
+  height: 100%;
+  position: absolute;
+  transform: translate3d(0px, -200%, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  width: 100%;
+  will-change: transform, width, height;
+
+  &--hero {
+    height: 60%;
+    bottom: 0;
+  }
+
+  &--aristobyte-ui {
+    height: 80%;
+    width: 20%;
+    z-index: -1;
+
+    &--1 {
+      bottom: -50%;
+    }
+
+    &--2 {
+      bottom: -100%;
+      right: 0%;
+    }
+
+    &--3 {
+      left: 0%;
+      bottom: -150%;
+    }
+  }
+}

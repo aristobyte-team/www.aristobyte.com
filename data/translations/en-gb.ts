@@ -41,4 +41,25 @@ export const EN_GB = {
       },
     },
   },
+  "aristobyte-ui": {
+    title: "AristoByte UI: Build Interfaces at the Speed of Thought",
+    description:
+      "Supercharge your development workflow with our production-ready, beautifully designed UI components. From buttons to complex charts, every piece is crafted for performance, accessibility, and consistency. Seamlessly integrate with your React projects and stay focused on what matters—building great products.",
+    idee: {
+      title: "We Build the System, You Build the Experience",
+      description: {
+        p1: "Every component begins with thoughtful engineering—crafted inside our IDE with precision, scalability, and real use cases in mind. This is where the building blocks of your product take shape.",
+        p2: "We handle the complexity and consistency so you can focus on what really matters: creating smooth, user-focused interfaces at speed.",
+      },
+      button: "Learn more",
+    },
+    windows: {
+      title: "A Component System Built for Velocity",
+      description: {
+        p1: "A growing library of plug-and-play UI components built to adapt—fast. Every element is designed for responsiveness, scalability, and real-world applications, so your team can skip boilerplate and build polished interfaces without reinventing the wheel.",
+        p2: "Continuously evolving with modern design updates, dark mode compatibility, and a relentless focus on performance and developer experience. Whether you're building dashboards, marketing sites, or internal tools, AristoByte UI gives you the speed and flexibility to stay ahead.",
+      },
+      button: "Learn more",
+    },
+  },
 };

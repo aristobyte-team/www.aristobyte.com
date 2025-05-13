@@ -1,8 +1,6 @@
 @use "../../styles/settings" as *;
 
 .features {
-  height: calc(100vh - $header-height);
-
   &__container {
     @include container;
     & {

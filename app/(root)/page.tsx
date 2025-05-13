@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { useTranslate } from "@/context";
-import { Hero, Features } from "@/components";
+import { Hero, Features, AristoByteUI } from "@/components";
 
 import "./page.scss";
 
@@ -12,6 +12,7 @@ export default function Home() {
     <>
       <Hero t={t} />
       <Features t={t} />
+      <AristoByteUI t={t} />
     </>
   );
 }

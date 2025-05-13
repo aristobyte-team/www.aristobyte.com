@@ -1,6 +1,7 @@
 import * as React from "react";
 import Link from "next/link";
 
+import { Gradient } from "@components";
 import { TranslateFunctionType } from "@/data";
 import { Config } from "@/config";
 
@@ -12,6 +13,7 @@ export type HeroPropsType = {
 
 export const Hero = ({ t }: HeroPropsType) => (
   <section className="hero">
+    <Gradient id="hero" preventMotionAnimation />
     <div className="hero__gradient" />
     <div className="hero__container">
       <div className="hero__content">
