@@ -39,7 +39,7 @@ export const IdeeSection = () => {
             transition={{ duration: 0.4, delay: 0.1 }}
             viewport={{ once: false }}
           >
-            {t(`idee.title`)}
+            {t(`ui.idee.title`)}
           </motion.h2>
           <motion.p
             className="section__description"
@@ -48,7 +48,7 @@ export const IdeeSection = () => {
             transition={{ duration: 0.4, delay: 0.2 }}
             viewport={{ once: false }}
           >
-            {t(`idee.description.p1`)}
+            {t(`ui.idee.description.p1`)}
           </motion.p>
           <motion.p
             className="section__description"
@@ -57,7 +57,7 @@ export const IdeeSection = () => {
             transition={{ duration: 0.4, delay: 0.3 }}
             viewport={{ once: false }}
           >
-            {t(`idee.description.p2`)}
+            {t(`ui.idee.description.p2`)}
           </motion.p>
         </div>
       </div>

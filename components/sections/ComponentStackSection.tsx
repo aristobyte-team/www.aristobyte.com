@@ -36,7 +36,7 @@ export const ComponentStackSection = () => {
             transition={{ duration: 0.4, delay: 0.1 }}
             viewport={{ once: false }}
           >
-            {t(`component-stack.title`)}
+            {t(`ui.component-stack.title`)}
           </motion.h2>
           <motion.p
             className="section__description"
@@ -45,7 +45,7 @@ export const ComponentStackSection = () => {
             transition={{ duration: 0.4, delay: 0.2 }}
             viewport={{ once: false }}
           >
-            {t(`component-stack.description.p1`)}
+            {t(`ui.component-stack.description.p1`)}
           </motion.p>
           <motion.p
             className="section__description"
@@ -54,7 +54,7 @@ export const ComponentStackSection = () => {
             transition={{ duration: 0.4, delay: 0.3 }}
             viewport={{ once: false }}
           >
-            {t(`component-stack.description.p2`)}
+            {t(`ui.component-stack.description.p2`)}
           </motion.p>
         </div>
 

@@ -1,3 +1,4 @@
 - Netlify todo status in Readme.MD
 - refactor the components (Namings are confusing and code dups exist)
 - header moving up
+- refactor and move content to translation and the urls etc to Config

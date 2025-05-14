@@ -1,10 +1,15 @@
 import * as React from "react";
-import { AristoByteUI, IdeeSection, ComponentStackSection } from "@/components";
+import { Hero, IdeeSection, ComponentStackSection } from "@/components";
 
 export default function Home() {
   return (
     <>
-      <AristoByteUI />
+      <Hero
+        withGradient
+        title="ui.hero.title"
+        subtitle="ui.hero.subtitle"
+        description="ui.hero.description"
+      />
       <IdeeSection />
       <ComponentStackSection />
     </>

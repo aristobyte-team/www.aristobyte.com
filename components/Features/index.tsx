@@ -14,22 +14,24 @@ export const Features = () => {
     <section id="features" className="features">
       <div className="features__container">
         <div className="features__content">
-          <h2 className="features__title">{t("features.title")}</h2>
-          <p className="features__description">{t("features.description")}</p>
+          <h2 className="features__title">{t("home.features.title")}</h2>
+          <p className="features__description">
+            {t("home.features.description")}
+          </p>
         </div>
 
         <ul className="features__list">
-          {Config.features.cards.map(({ id, icon }) => (
+          {Config.home.features.cards.map(({ id, icon }) => (
             <li key={id} className="features__card">
               <span
                 className="features__card-icon"
                 dangerouslySetInnerHTML={{ __html: icon }}
               />
               <h3 className="features__card-title">
-                {t(`features.cards.${id}.title`)}
+                {t(`home.features.cards.${id}.title`)}
               </h3>
               <p className="features__card-description">
-                {t(`features.cards.${id}.description`)}
+                {t(`home.features.cards.${id}.description`)}
               </p>
             </li>
           ))}

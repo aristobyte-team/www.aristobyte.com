@@ -37,9 +37,11 @@ export const AppsPreview = () => {
     <section className="apps-preview" ref={sectionRef}>
       <div className="apps-preview__container">
         <div className="apps-preview__content">
-          <h2 className="apps-preview__title">{t("apps-preview.title")}</h2>
+          <h2 className="apps-preview__title">
+            {t("home.apps-preview.title")}
+          </h2>
           <p className="apps-preview__description">
-            {t("apps-preview.description")}
+            {t("home.apps-preview.description")}
           </p>
         </div>
 
@@ -47,7 +49,7 @@ export const AppsPreview = () => {
           <div className="apps-preview__phones-container">
             <div className="apps-preview__link-container">
               <Link className="apps-preview__link" href="/apps">
-                <span>{t("apps-preview.link")}</span>
+                <span>{t("home.apps-preview.link")}</span>
               </Link>
             </div>
             <ul className="apps-preview__list">
