@@ -1,8 +1,8 @@
 ---
-name: Bug
-about: Something isn't working
+name: Tech Depth
+about: Code improvement with no big user facing changes
 title: ""
-labels: "bug"
+labels: "tech-depth"
 assignees: "aristobyte"
 ---
 
