@@ -1,0 +1,27 @@
+@use "../../styles/settings" as *;
+
+.ui-components-preview {
+  &__container {
+    @include container;
+  }
+
+  &__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__title {
+    @include title;
+  }
+
+  &__description {
+    @include description;
+    max-width: 550px;
+  }
+
+  &__link {
+    @include button;
+  }
+}

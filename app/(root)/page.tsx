@@ -1,11 +1,13 @@
 import * as React from "react";
-import { Hero, Features } from "@/components";
+import { Hero, Features, AppsPreview, UIComponentsPreview } from "@/components";
 
 export default function Home() {
   return (
     <>
       <Hero />
       <Features />
+      <AppsPreview />
+      <UIComponentsPreview />
     </>
   );
 }

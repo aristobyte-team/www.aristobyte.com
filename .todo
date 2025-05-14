@@ -1,2 +1,3 @@
 - Netlify todo status in Readme.MD
-- Add react-scroll
+- refactor the components (Namings are confusing and code dups exist)
+- header moving up

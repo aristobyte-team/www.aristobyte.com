@@ -3,7 +3,7 @@ export const EN_GB = {
     logo: { id: "logo", href: "/" },
     nav: {
       apps: "Apps",
-      ui: "UI",
+      ui: "AristoByteUI",
       insights: "Insights",
       contact: "Contact",
     },
@@ -42,7 +42,7 @@ export const EN_GB = {
     },
   },
   "aristobyte-ui": {
-    title: "AristoByte UI: Build Interfaces at the Speed of Thought",
+    title: "AristoByteUI: Build Interfaces at the Speed of Thought",
     description:
       "Supercharge your development workflow with our production-ready, beautifully designed UI components. From buttons to complex charts, every piece is crafted for performance, accessibility, and consistency. Seamlessly integrate with your React projects and stay focused on what matters—building great products.",
   },
@@ -58,8 +58,20 @@ export const EN_GB = {
     title: "A Component System Built for Velocity",
     description: {
       p1: "A growing library of plug-and-play UI components built to adapt—fast. Every element is designed for responsiveness, scalability, and real-world applications, so your team can skip boilerplate and build polished interfaces without reinventing the wheel.",
-      p2: "Continuously evolving with modern design updates, dark mode compatibility, and a relentless focus on performance and developer experience. Whether you're building dashboards, marketing sites, or internal tools, AristoByte UI gives you the speed and flexibility to stay ahead.",
+      p2: "Continuously evolving with modern design updates, dark mode compatibility, and a relentless focus on performance and developer experience. Whether you're building dashboards, marketing sites, or internal tools, AristoByteUI gives you the speed and flexibility to stay ahead.",
     },
     button: "Learn more",
+  },
+  "ui-components-preview": {
+    title: "Interfaces that Scale with You",
+    description:
+      "Discover our evolving library of production-ready React components. Built for speed, scalability, and developer joy.",
+    link: "Browse components",
+  },
+  "apps-preview": {
+    title: "Apps Built for Real Life",
+    description:
+      "From productivity tools to creative utilities, our upcoming apps are designed with performance and cross-platform simplicity in mind.",
+    link: "Explore our apps",
   },
 };

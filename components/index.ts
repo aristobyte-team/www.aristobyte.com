@@ -5,3 +5,5 @@ export { AristoByteUI } from "./AristoByteUI";
 export { Gradient } from "./Gradient";
 export { ScrollLink } from "./ScrollLink";
 export { IdeeSection, ComponentStackSection } from "./sections";
+export { AppsPreview } from "./AppsPreview";
+export { UIComponentsPreview } from "./UIComponentsPreview";
