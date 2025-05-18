@@ -1,6 +1,6 @@
-# Contributing to Spotify Clone
+# Contributing to AristoByte
 
-Thank you for your interest in contributing to the Spotify Clone project! We welcome contributions that improve the project, from fixing bugs to adding new features. Please read through this guide to understand how you can contribute effectively.
+Thank you for your interest in contributing to the AristoByte project! We welcome contributions that improve the project, from fixing bugs to adding new features. Please read through this guide to understand how you can contribute effectively.
 
 ## Getting Started
 
@@ -8,6 +8,6 @@ Thank you for your interest in contributing to the Spotify Clone project! We wel
 2. **Clone your forked repository**: Use the following command to clone the repository locally:
 
    ```bash
-   git clone https://github.com/dhunanyan/aristobyte.git
-   cd aristobyte
+   git clone https://github.com/dhunanyan/aristobyte-website.git
+   cd aristobyte-website
    ```

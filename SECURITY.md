@@ -20,7 +20,7 @@ If you find a security vulnerability, please report it by following these steps:
 
 1. **Do not publicly disclose**: Please avoid publicly disclosing vulnerabilities as it may put users at risk.
 2. **Send a private report**:
-   - **Email**: Send an email to **davit.hunanyan@me.com** (replace with your actual contact email).
+   - **Email**: Send an email to **info@aristobyte.com** (replace with your actual contact email).
    - **Subject line**: Begin the subject line with `[SECURITY ISSUE]`.
    - **Include details**: Describe the issue with as much detail as possible. Include:
      - Steps to reproduce
