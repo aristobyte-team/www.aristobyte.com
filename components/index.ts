@@ -6,6 +6,7 @@ export { ScrollLink } from "./ScrollLink";
 export { IdeeSection, ComponentStackSection } from "./sections";
 export { AppsPreview } from "./AppsPreview";
 export { UIComponentsPreview } from "./UIComponentsPreview";
+export { NotFound } from "./NotFound";
 export {
   Disclaimer,
   PrivacyPolicy,

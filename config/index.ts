@@ -1,4 +1,4 @@
-import { Icons } from "@/utils";
+import { Icons, LinkType } from "@/utils";
 
 export const Config = {
   header: {
@@ -13,8 +13,7 @@ export const Config = {
     hero: {
       icon: Icons.Logo,
       links: [
-        { id: "get-started", href: "features" },
-        { id: "apps", href: "apps" },
+        { id: "get-started", href: "features", type: LinkType.SCROLL_LINK },
       ],
     },
     features: {
@@ -42,9 +41,21 @@ export const Config = {
     hero: {
       icon: Icons.Logo,
       links: [
-        { id: "instagram", href: "https://instagram.com/aristo_byte" },
-        { id: "facebook", href: "https://facebook.com/aristobyte" },
-        { id: "twitter", href: "https://x.com/aristo_byte" },
+        {
+          id: "instagram",
+          href: "https://instagram.com/aristo_byte",
+          type: LinkType.NEXT_LINK,
+        },
+        {
+          id: "facebook",
+          href: "https://facebook.com/aristobyte",
+          type: LinkType.NEXT_LINK,
+        },
+        {
+          id: "twitter",
+          href: "https://x.com/aristo_byte",
+          type: LinkType.NEXT_LINK,
+        },
       ],
     },
   },

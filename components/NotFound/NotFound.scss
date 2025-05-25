@@ -1,0 +1,59 @@
+@use "../../styles/settings" as *;
+
+.not-found {
+  height: calc(100vh - $header-height);
+
+  &__container {
+    @include container;
+    & {
+      display: flex;
+    }
+  }
+
+  &__content {
+    @include regularShadow;
+    & {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      max-width: 450px;
+    }
+  }
+
+  &__404 {
+    color: $white-color;
+    font-family: $font-righteous;
+    font-size: 90px;
+    text-shadow: 0 0 5px $logo-color-1, 0 0 10px $logo-color-2,
+      0 0 20px $logo-color-3, 0 0 40px $logo-color-4, 0 0 80px $logo-color-5;
+  }
+
+  &__title {
+    @include title;
+    & {
+      background: $logo-gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &__subtitle {
+    @include subtitle;
+    & {
+      color: $white-color;
+      margin: 10px 0 0;
+    }
+  }
+
+  &__description {
+    @include description;
+    & {
+      margin: 10px 0 20px;
+    }
+  }
+
+  &__button {
+    @include button;
+  }
+}

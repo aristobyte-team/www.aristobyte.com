@@ -32,7 +32,7 @@ export const Gradient = ({
         .map((c) => `gradient--${c}`)
         .join(" ")}`}
       initial={{ opacity: 0.6 }}
-      whileInView={{ opacity: 1 }}
+      animate={{ opacity: 1 }}
       transition={{ duration: 0.15 }}
       viewport={{ once: false }}
     />

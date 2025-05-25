@@ -32,7 +32,7 @@ export const ComponentStackSection = () => {
           <motion.h2
             className="section__title"
             initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.4, delay: 0.1 }}
             viewport={{ once: false }}
           >
@@ -41,7 +41,7 @@ export const ComponentStackSection = () => {
           <motion.p
             className="section__description"
             initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.4, delay: 0.2 }}
             viewport={{ once: false }}
           >
@@ -50,7 +50,7 @@ export const ComponentStackSection = () => {
           <motion.p
             className="section__description"
             initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.4, delay: 0.3 }}
             viewport={{ once: false }}
           >
@@ -68,7 +68,7 @@ export const ComponentStackSection = () => {
                   dangerouslySetInnerHTML={{ __html: Icons.Button }}
                   className="section__svg-list-inner section__svg-list-inner--icon"
                   initial={{ opacity: 0, y: -80, scale: 0.95 }}
-                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
                   transition={{
                     duration: 0.4,
                     delay: 0.2 * (CardSVGs.length - 2),
@@ -81,7 +81,7 @@ export const ComponentStackSection = () => {
                 style={{ zIndex: CardSVGs.length - i, top: i * step }}
                 className="section__svg-list-inner"
                 initial={{ opacity: 0, y: 80, scale: 0.95 }}
-                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{
                   duration: 0.4,
                   delay: 0.2 * i,

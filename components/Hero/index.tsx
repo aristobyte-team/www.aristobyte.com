@@ -2,9 +2,11 @@
 
 import * as React from "react";
 import NextLink from "next/link";
+import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 
 import { Gradient } from "@/components";
+import { HEADER_SIZE, LinkType } from "@/utils";
 import { useTranslate } from "@/context";
 
 import "./Hero.scss";
@@ -19,8 +21,11 @@ export type HeroPropsType = {
   links?: {
     id: string;
     href: string;
+    type: LinkType;
   }[];
 };
+
+const offset = -HEADER_SIZE - 20;
 
 export const Hero = ({
   withGradient,
@@ -50,7 +55,7 @@ export const Hero = ({
               className="hero__icon"
               dangerouslySetInnerHTML={{ __html: icon }}
               initial={{ opacity: 0, y: -20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: iconDelay }}
               viewport={{ once: false }}
             />
@@ -59,7 +64,7 @@ export const Hero = ({
             <motion.h3
               className="hero__subtitle"
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: subtitleDelay }}
               viewport={{ once: false }}
             >
@@ -70,7 +75,7 @@ export const Hero = ({
             <motion.h2
               className="hero__title"
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: titleDelay }}
               viewport={{ once: false }}
             >
@@ -81,7 +86,7 @@ export const Hero = ({
             <motion.p
               className="hero__description"
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: descriptionDelay }}
               viewport={{ once: false }}
             >
@@ -91,18 +96,25 @@ export const Hero = ({
         </div>
         {links && linkText && (
           <ul className="hero__links">
-            {links.map(({ id, href }) => (
+            {links.map(({ id, href, type }) => (
               <motion.li
                 key={id}
                 className={`hero__item hero__item--${id}`}
                 initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: linksDelay }}
                 viewport={{ once: false }}
               >
-                <NextLink href={href} target="_blank" className="hero__link">
-                  <span>{t(`${linkText}.${id}`)}</span>
-                </NextLink>
+                {type === LinkType.NEXT_LINK && (
+                  <NextLink href={href} target="_blank" className="hero__link">
+                    <span>{t(`${linkText}.${id}`)}</span>
+                  </NextLink>
+                )}
+                {type === LinkType.SCROLL_LINK && (
+                  <Link offset={offset} to={href} className="hero__link">
+                    <span>{t(`${linkText}.${id}`)}</span>
+                  </Link>
+                )}
               </motion.li>
             ))}
           </ul>

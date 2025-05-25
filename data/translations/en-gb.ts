@@ -15,7 +15,6 @@ export const EN_GB = {
         "Scalable web and mobile software tailored to help startups and businesses innovate faster, grow smarter, and operate more efficiently",
       links: {
         "get-started": "Get started",
-        apps: "Show apps",
       },
     },
     features: {
@@ -109,5 +108,12 @@ export const EN_GB = {
         eula: "EULA",
       },
     },
+  },
+  "not-found": {
+    title: "Page Not Found",
+    subtitle: "The page you're looking for doesn't exist.",
+    description:
+      "It might have been moved, deleted, or the link is incorrect.\nUse the navigation to go back or return to the homepage.",
+    button: "Go back",
   },
 };
