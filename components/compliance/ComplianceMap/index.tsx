@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import Link from "next/link";
+import NextLink from "next/link";
 
 import { useTranslate } from "@/context";
 import { Icons } from "@/utils";
@@ -31,7 +31,7 @@ export const ComplianceMap = () => {
           <ul className="compliance-map__list">
             {Config.compliance.main.list.map(({ id, href }) => (
               <li key={id}>
-                <Link href={href} className="compliance-map__link">
+                <NextLink href={href} className="compliance-map__link">
                   <span className="compliance-map__link-text">
                     {t(`compliance.main.list.${id}`)}
                   </span>
@@ -39,7 +39,7 @@ export const ComplianceMap = () => {
                     className="compliance-map__link-icon"
                     dangerouslySetInnerHTML={{ __html: Icons.ArrowRight }}
                   />
-                </Link>
+                </NextLink>
               </li>
             ))}
           </ul>

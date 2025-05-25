@@ -5,6 +5,8 @@ import { Link } from "react-scroll";
 import NextLink from "next/link";
 import { HEADER_SIZE } from "@/utils";
 
+import { GoBackButton } from "./GoBackButton";
+
 import "./compliance.scss";
 
 const offset = -HEADER_SIZE - 20;
@@ -13,7 +15,10 @@ export const Eula = () => (
   <div className="compliance">
     <div className="compliance__container">
       <div className="compliance__document">
-        <h1 className="compliance__title">END USER LICENSE AGREEMENT</h1>
+        <h1 className="compliance__title">
+          <GoBackButton />
+          <span>END USER LICENSE AGREEMENT</span>
+        </h1>
         <p className="compliance__date">
           Last updated:&nbsp;<b>19.05.2025</b>
         </p>
@@ -126,22 +131,35 @@ export const Eula = () => (
               </Link>
             </li>
             <li>
-              <Link to="legal-compliance" className="compliance__link">
+              <Link
+                offset={offset}
+                to="legal-compliance"
+                className="compliance__link"
+              >
                 10. LEGAL COMPLIANCE
               </Link>
             </li>
             <li>
-              <Link to="contact-information" className="compliance__link">
+              <Link
+                offset={offset}
+                to="contact-information"
+                className="compliance__link"
+              >
                 11. CONTACT INFORMATION
               </Link>
             </li>
             <li>
-              <Link to="termination" className="compliance__link">
+              <Link
+                offset={offset}
+                to="termination"
+                className="compliance__link"
+              >
                 12. TERMINATION
               </Link>
             </li>
             <li>
               <Link
+                offset={offset}
                 to="third-party-terms-of-agreements-and-beneficiary"
                 className="compliance__link"
               >
@@ -150,6 +168,7 @@ export const Eula = () => (
             </li>
             <li>
               <Link
+                offset={offset}
                 to="intellectual-property-rights"
                 className="compliance__link"
               >
@@ -157,12 +176,20 @@ export const Eula = () => (
               </Link>
             </li>
             <li>
-              <Link to="applicable-law" className="compliance__link">
+              <Link
+                offset={offset}
+                to="applicable-law"
+                className="compliance__link"
+              >
                 15. APPLICABLE LAW
               </Link>
             </li>
             <li>
-              <Link to="miscellaneous" className="compliance__link">
+              <Link
+                offset={offset}
+                to="miscellaneous"
+                className="compliance__link"
+              >
                 16. MISCELLANEOUS
               </Link>
             </li>

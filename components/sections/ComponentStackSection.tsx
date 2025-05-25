@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import Link from "next/link";
+import NextLink from "next/link";
 
 import { motion } from "framer-motion";
 import { Gradient } from "@/components";
@@ -19,7 +19,7 @@ export type ComponentStackSectionPropsType = {
 const CardSVGs = ["Card1", "Card2", "Card3"];
 const step = 100;
 
-const MotionLink = motion.create(Link);
+const MotionLink = motion.create(NextLink);
 
 export const ComponentStackSection = () => {
   const { t } = useTranslate();

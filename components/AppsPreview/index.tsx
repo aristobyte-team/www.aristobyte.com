@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import Link from "next/link";
+import NextLink from "next/link";
 import { useTranslate } from "@/context";
 
 import "./AppsPreview.scss";
@@ -48,9 +48,9 @@ export const AppsPreview = () => {
         <div className="apps-preview__phones">
           <div className="apps-preview__phones-container">
             <div className="apps-preview__link-container">
-              <Link className="apps-preview__link" href="/apps">
+              <NextLink className="apps-preview__link" href="/apps">
                 <span>{t("home.apps-preview.link")}</span>
-              </Link>
+              </NextLink>
             </div>
             <ul className="apps-preview__list">
               {[...Array(7).keys(), ...Array(7).keys()].map((id, i) => (

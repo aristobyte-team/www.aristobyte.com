@@ -3,13 +3,18 @@
 import * as React from "react";
 import NextLink from "next/link";
 
+import { GoBackButton } from "./GoBackButton";
+
 import "./compliance.scss";
 
 export const CookiePolicy = () => (
   <div className="compliance">
     <div className="compliance__container">
       <div className="compliance__document">
-        <h1 className="compliance__title">COOKIE POLICY</h1>
+        <h1 className="compliance__title">
+          <GoBackButton />
+          <span>COOKIE POLICY</span>
+        </h1>
         <p className="compliance__date">
           Last updated: <b>19.05.2025</b>
         </p>

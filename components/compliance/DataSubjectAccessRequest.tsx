@@ -1,5 +1,7 @@
 import * as React from "react";
-import Link from "next/link";
+import NextLink from "next/link";
+
+import { GoBackButton } from "./GoBackButton";
 
 import "./compliance.scss";
 
@@ -9,7 +11,8 @@ export const DataSubjectAccessRequest = () => {
       <div className="compliance__container">
         <div className="compliance__document">
           <h1 className="compliance__title">
-            AristoByte Data Subject Access Request (DSAR) Policy
+            <GoBackButton />
+            <span>AristoByte Data Subject Access Request (DSAR) Policy</span>
           </h1>
           <p className="compliance__date">
             Last updated:&nbsp;<b>19.05.2025</b>
@@ -73,33 +76,33 @@ export const DataSubjectAccessRequest = () => {
             <li>
               <p className="compliance__par">
                 Online Contact Form:&nbsp;
-                <Link className="compliance__link" href="/contact">
+                <NextLink className="compliance__link" href="/contact">
                   https://aristobyte.com/contact
-                </Link>
+                </NextLink>
               </p>
             </li>
             <li>
               <p className="compliance__par">
                 Email:&nbsp;
-                <Link
+                <NextLink
                   className="compliance__link"
                   href="mailto:info@aristobyte.com"
                   target="_blank"
                 >
                   info@aristobyte.com
-                </Link>
+                </NextLink>
               </p>
             </li>
             <li>
               <p className="compliance__par">
                 Phone:&nbsp;
-                <Link
+                <NextLink
                   className="compliance__link"
                   href="tel:+48-451-652-749"
                   target="_blank"
                 >
                   (+48) 451 652 749
-                </Link>
+                </NextLink>
               </p>
             </li>
           </ul>
@@ -202,33 +205,33 @@ export const DataSubjectAccessRequest = () => {
             <li>
               <p className="compliance__par">
                 Online Contact Form:&nbsp;
-                <Link className="compliance__link" href="/contact">
+                <NextLink className="compliance__link" href="/contact">
                   https://aristobyte.com/contact
-                </Link>
+                </NextLink>
               </p>
             </li>
             <li>
               <p className="compliance__par">
                 Email:&nbsp;
-                <Link
+                <NextLink
                   className="compliance__link"
                   href="mailto:info@aristobyte.com"
                   target="_blank"
                 >
                   info@aristobyte.com
-                </Link>
+                </NextLink>
               </p>
             </li>
             <li>
               <p className="compliance__par">
                 Phone:&nbsp;
-                <Link
+                <NextLink
                   className="compliance__link"
                   href="tel:+48-451-652-749"
                   target="_blank"
                 >
                   (+48) 451 652 749
-                </Link>
+                </NextLink>
               </p>
             </li>
           </ul>

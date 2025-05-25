@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import Link from "next/link";
+import NextLink from "next/link";
 import { useTranslate } from "@/context";
 
 import "./UIComponentsPreview.scss";
@@ -19,9 +19,9 @@ export const UIComponentsPreview = () => {
           <p className="ui-components-preview__description">
             {t("home.ui-components-preview.description")}
           </p>
-          <Link href="/ui" className="ui-components-preview__link">
+          <NextLink href="/ui" className="ui-components-preview__link">
             <span>{t("home.ui-components-preview.link")}</span>
-          </Link>
+          </NextLink>
         </div>
       </div>
     </section>

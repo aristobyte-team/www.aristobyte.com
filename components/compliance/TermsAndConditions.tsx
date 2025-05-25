@@ -4,14 +4,22 @@ import * as React from "react";
 import NextLink from "next/link";
 import { Link } from "react-scroll";
 
+import { HEADER_SIZE } from "@/utils";
+import { GoBackButton } from "./GoBackButton";
+
 import "./compliance.scss";
+
+const offset = -HEADER_SIZE - 20;
 
 export const TermsAndConditions = () => (
   <div className="compliance">
     <div className="compliance__container">
       <div className="compliance__document">
-        <h1 className="compliance__title">TERMS AND CONDITIONS</h1>
-        <p className="compliance__par">
+        <h1 className="compliance__title">
+          <GoBackButton />
+          <span>TERMS AND CONDITIONS</span>
+        </h1>
+        <p className="compliance__date">
           Last updated:&nbsp;<b>19.05.2025</b>
         </p>
         <section>
@@ -106,12 +114,17 @@ export const TermsAndConditions = () => (
           <h2 className="compliance__title-small">TABLE OF CONTENTS</h2>
           <ul className="compliance__list">
             <li>
-              <Link className="compliance__link" to="our-service">
+              <Link
+                offset={offset}
+                className="compliance__link"
+                to="our-service"
+              >
                 1. OUR SERVICES
               </Link>
             </li>
             <li>
               <Link
+                offset={offset}
                 className="compliance__link"
                 to="intellectual-property-rights"
               >
@@ -119,22 +132,35 @@ export const TermsAndConditions = () => (
               </Link>
             </li>
             <li>
-              <Link className="compliance__link" to="user-representations">
+              <Link
+                offset={offset}
+                className="compliance__link"
+                to="user-representations"
+              >
                 3. USER REPRESENTATIONS
               </Link>
             </li>
             <li>
-              <Link className="compliance__link" to="subscriptions">
+              <Link
+                offset={offset}
+                className="compliance__link"
+                to="subscriptions"
+              >
                 4. SUBSCRIPTIONS
               </Link>
             </li>
             <li>
-              <Link className="compliance__link" to="prohibited-activities">
+              <Link
+                offset={offset}
+                className="compliance__link"
+                to="prohibited-activities"
+              >
                 5. PROHIBITED ACTIVITIES
               </Link>
             </li>
             <li>
               <Link
+                offset={offset}
                 className="compliance__link"
                 to="user-generated-contributions"
               >
@@ -142,12 +168,17 @@ export const TermsAndConditions = () => (
               </Link>
             </li>
             <li>
-              <Link className="compliance__link" to="contribution-license">
+              <Link
+                offset={offset}
+                className="compliance__link"
+                to="contribution-license"
+              >
                 7. CONTRIBUTION LICENSE
               </Link>
             </li>
             <li>
               <Link
+                offset={offset}
                 className="compliance__link"
                 to="third-party-websites-and-content"
               >
@@ -155,22 +186,35 @@ export const TermsAndConditions = () => (
               </Link>
             </li>
             <li>
-              <Link className="compliance__link" to="services-management">
+              <Link
+                offset={offset}
+                className="compliance__link"
+                to="services-management"
+              >
                 9. SERVICES MANAGEMENT
               </Link>
             </li>
             <li>
-              <Link className="compliance__link" to="privacy-policy">
+              <Link
+                offset={offset}
+                className="compliance__link"
+                to="privacy-policy"
+              >
                 10. PRIVACY POLICY
               </Link>
             </li>
             <li>
-              <Link className="compliance__link" to="term-and-termination">
+              <Link
+                offset={offset}
+                className="compliance__link"
+                to="term-and-termination"
+              >
                 11. TERM AND TERMINATION
               </Link>
             </li>
             <li>
               <Link
+                offset={offset}
                 className="compliance__link"
                 to="modifications-and-interruptions"
               >
@@ -178,42 +222,67 @@ export const TermsAndConditions = () => (
               </Link>
             </li>
             <li>
-              <Link className="compliance__link" to="governing-law">
+              <Link
+                offset={offset}
+                className="compliance__link"
+                to="governing-law"
+              >
                 13. GOVERNING LAW
               </Link>
             </li>
             <li>
-              <Link className="compliance__link" to="dispute-resolution">
+              <Link
+                offset={offset}
+                className="compliance__link"
+                to="dispute-resolution"
+              >
                 14. DISPUTE RESOLUTION
               </Link>
             </li>
             <li>
-              <Link className="compliance__link" to="corrections">
+              <Link
+                offset={offset}
+                className="compliance__link"
+                to="corrections"
+              >
                 15. CORRECTIONS
               </Link>
             </li>
             <li>
-              <Link className="compliance__link" to="disclaimer">
+              <Link
+                offset={offset}
+                className="compliance__link"
+                to="disclaimer"
+              >
                 16. DISCLAIMER
               </Link>
             </li>
             <li>
-              <Link className="compliance__link" to="limitations-of-liability">
+              <Link
+                offset={offset}
+                className="compliance__link"
+                to="limitations-of-liability"
+              >
                 17. LIMITATIONS OF LIABILITY
               </Link>
             </li>
             <li>
-              <Link className="compliance__link" to="indemnification">
+              <Link
+                offset={offset}
+                className="compliance__link"
+                to="indemnification"
+              >
                 18. INDEMNIFICATION
               </Link>
             </li>
             <li>
-              <Link className="compliance__link" to="user-data">
+              <Link offset={offset} className="compliance__link" to="user-data">
                 19. USER DATA
               </Link>
             </li>
             <li>
               <Link
+                offset={offset}
                 className="compliance__link"
                 to="electronic-communications-transactions-and-signatures"
               >
@@ -222,6 +291,7 @@ export const TermsAndConditions = () => (
             </li>
             <li>
               <Link
+                offset={offset}
                 className="compliance__link"
                 to="california-users-and-residents"
               >
@@ -229,12 +299,20 @@ export const TermsAndConditions = () => (
               </Link>
             </li>
             <li>
-              <Link className="compliance__link" to="miscellaneous">
+              <Link
+                offset={offset}
+                className="compliance__link"
+                to="miscellaneous"
+              >
                 22. MISCELLANEOUS
               </Link>
             </li>
             <li>
-              <Link className="compliance__link" to="contact-us">
+              <Link
+                offset={offset}
+                className="compliance__link"
+                to="contact-us"
+              >
                 23. CONTACT US
               </Link>
             </li>
@@ -289,7 +367,11 @@ export const TermsAndConditions = () => (
           <p className="compliance__par">
             Subject to your compliance with these Legal Terms, including the
             &#39;
-            <Link className="compliance__link" to="prohibited-activities">
+            <Link
+              offset={offset}
+              className="compliance__link"
+              to="prohibited-activities"
+            >
               PROHIBITED ACTIVITIES
             </Link>
             &#39; section below, we grant you a non-exclusive, non-transferable,
@@ -347,7 +429,11 @@ export const TermsAndConditions = () => (
           <h3 className="compliance__subtitle">Your submissions</h3>
           <p className="compliance__par">
             Please review this section and the &#39;
-            <Link className="compliance__link" to="prohibited-activities">
+            <Link
+              offset={offset}
+              className="compliance__link"
+              to="prohibited-activities"
+            >
               PROHIBITED ACTIVITIES
             </Link>
             &#39; section carefully prior to using our Services to understand
@@ -371,7 +457,11 @@ export const TermsAndConditions = () => (
             <li>
               <p className="compliance__par">
                 confirm that you have read and agree with our &#39;
-                <Link className="compliance__link" to="prohibited-activities">
+                <Link
+                  offset={offset}
+                  className="compliance__link"
+                  to="prohibited-activities"
+                >
                   PROHIBITED ACTIVITIES
                 </Link>
                 &#39; and will not post, send, publish, upload, or transmit
@@ -873,7 +963,11 @@ export const TermsAndConditions = () => (
           <p className="compliance__par">
             We care about data privacy and security. Please review our Privacy
             Policy:
-            <Link className="compliance__link" to="prohibited-activities">
+            <Link
+              offset={offset}
+              className="compliance__link"
+              to="prohibited-activities"
+            >
               https://aristobyte.com/privacy-policy
             </Link>
             . By using the Services, you agree to be bound by our Privacy

@@ -1,5 +1,7 @@
 import * as React from "react";
-import Link from "next/link";
+import NextLink from "next/link";
+
+import { GoBackButton } from "./GoBackButton";
 
 import "./compliance.scss";
 
@@ -7,7 +9,10 @@ export const Disclaimer = () => (
   <div className="compliance">
     <div className="compliance__container">
       <div className="compliance__document">
-        <h1 className="compliance__title">DISCLAIMER</h1>
+        <h1 className="compliance__title">
+          <GoBackButton />
+          <span>DISCLAIMER</span>
+        </h1>
         <p className="compliance__date">
           Last updated:&nbsp;
           <b>19.05.2025</b>
@@ -17,9 +22,9 @@ export const Disclaimer = () => (
           <p className="compliance__par">
             The information provided by <b>AristoByte</b>
             &nbsp;(&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) on&nbsp;
-            <Link className="compliance__link" href="/">
+            <NextLink className="compliance__link" href="/">
               https://aristobyte.com
-            </Link>
+            </NextLink>
             &nbsp;(the &quot;Site&quot;) and our mobile application &nbsp;is for
             general informational purposes only. All information on the Site and
             our mobile application &nbsp;is provided in good faith, however we

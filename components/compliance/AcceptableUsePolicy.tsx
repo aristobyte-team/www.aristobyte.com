@@ -1,7 +1,9 @@
 "use client";
 
 import * as React from "react";
-import Link from "next/link";
+import NextLink from "next/link";
+
+import { GoBackButton } from "./GoBackButton";
 
 import "./compliance.scss";
 
@@ -9,17 +11,20 @@ export const AcceptableUsePolicy = () => (
   <div className="compliance">
     <div className="compliance__container">
       <div className="compliance__document">
-        <h1 className="compliance__title">ACCEPTABLE USE POLICY</h1>
-        <p className="compliance__par">
+        <h1 className="compliance__title">
+          <GoBackButton />
+          <span>ACCEPTABLE USE POLICY</span>
+        </h1>
+        <p className="compliance__date">
           Last updated:&nbsp;<b>19.05.2025</b>
         </p>
         <p className="compliance__par">
           This Acceptable Use Policy (&quot;Policy&quot;) is part of our&nbsp;
           AristoByte &nbsp;(&quot;Legal Terms&quot;) and should therefore be
           read alongside our main Legal Terms:&nbsp;
-          <Link className="compliance__link" href="/terms-and-conditions">
+          <NextLink className="compliance__link" href="/terms-and-conditions">
             https://aristobyte.com/terms-and-conditions
-          </Link>
+          </NextLink>
           . If you do not agree with these Legal Terms, please refrain from
           using our Services. Your continued use of our Services implies
           acceptance of these Legal Terms.

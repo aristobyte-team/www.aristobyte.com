@@ -5,6 +5,8 @@ import { Link } from "react-scroll";
 import NextLink from "next/link";
 import { HEADER_SIZE } from "@/utils";
 
+import { GoBackButton } from "./GoBackButton";
+
 import "./compliance.scss";
 
 const offset = -HEADER_SIZE - 20;
@@ -13,7 +15,10 @@ export const PrivacyPolicy = () => (
   <div className="compliance">
     <div className="compliance__container">
       <div className="compliance__document">
-        <h1 className="compliance__title">PRIVACY POLICY</h1>
+        <h1 className="compliance__title">
+          <GoBackButton />
+          <span>PRIVACY POLICY</span>
+        </h1>
         <p className="compliance__date">
           Last updated:&nbsp;<b>19.05.2025</b>
         </p>
@@ -535,6 +540,7 @@ export const PrivacyPolicy = () => (
             at any time by contacting us by using the contact details provided
             in the section &quot;
             <Link
+              offset={offset}
               className="compliance__link"
               to="#how-can-you-contact-us-about-this-notice"
             >

@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import Link from "next/link";
+import NextLink from "next/link";
 
 import { Config } from "@config";
 import { useTranslate } from "@/context";
@@ -14,7 +14,7 @@ export const Header = () => {
   return (
     <header className="header">
       <div className="header__container">
-        <Link href="/" className="header__logo">
+        <NextLink href="/" className="header__logo">
           <span className="header__logo-icon">
             <span
               className="header__logo-icon-container"
@@ -22,15 +22,15 @@ export const Header = () => {
             />
           </span>
           <span className="header__logo-text">AristoByte</span>
-        </Link>
+        </NextLink>
 
         <nav>
           <ul className="header__list">
             {Config.header.nav.map(({ id, href }) => (
               <li key={id}>
-                <Link className="header__link" href={href}>
+                <NextLink className="header__link" href={href}>
                   {t(`header.nav.${id}`)}
-                </Link>
+                </NextLink>
               </li>
             ))}
           </ul>

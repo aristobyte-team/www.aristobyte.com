@@ -16,13 +16,20 @@
   }
 
   &__date {
-    margin: 0 0 10px;
+    margin: 30px 0 10px;
   }
 
   &__title {
+    @include regularShadow;
     @include title;
     & {
-      color: $black-flat-color;
+      align-items: center;
+      background-color: $black-color;
+      border-radius: $border-radius-small;
+      color: $white-color;
+      display: flex;
+      gap: 20px;
+      padding: 15px 10px;
       text-align: left;
     }
   }
