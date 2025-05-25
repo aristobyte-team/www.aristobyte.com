@@ -1,0 +1,9 @@
+export { Disclaimer } from "./Disclaimer";
+export { PrivacyPolicy } from "./PrivacyPolicy";
+export { DataSubjectAccessRequest } from "./DataSubjectAccessRequest";
+export { Eula } from "./Eula";
+export { CookiePolicy } from "./CookiePolicy";
+export { ReturnPolicy } from "./ReturnPolicy";
+export { AcceptableUsePolicy } from "./AcceptableUsePolicy";
+export { TermsAndConditions } from "./TermsAndConditions";
+export { ComplianceMap } from "./ComplianceMap";

@@ -1,0 +1,75 @@
+@use "../../styles/settings" as *;
+
+.compliance {
+  &__container {
+    @include container;
+  }
+
+  &__document {
+    @include regularShadow;
+    @include container;
+    & {
+      background-color: $white-color;
+      border-radius: $border-radius-small;
+      max-width: 900px;
+    }
+  }
+
+  &__date {
+    margin: 0 0 10px;
+  }
+
+  &__title {
+    @include title;
+    & {
+      color: $black-flat-color;
+      text-align: left;
+    }
+  }
+
+  &__title-small {
+    @include titleSmall;
+    & {
+      color: $black-flat-color;
+      margin: 20px 0 10px;
+      text-align: left;
+    }
+  }
+
+  &__link {
+    color: $facebook-color;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 150ms ease-out;
+
+    &:hover {
+      color: $facebook-hover-color;
+      text-decoration: underline;
+    }
+  }
+
+  &__par {
+    @include description;
+    & {
+      color: $black-flat-color;
+      margin: 8px 0;
+      text-align: left;
+    }
+  }
+
+  &__list {
+    margin: 0 0 20px;
+
+    &--with-dots {
+      margin: 0 0 20px 30px;
+
+      li {
+        list-style-type: disc;
+      }
+    }
+
+    li {
+      margin: 5px 0;
+    }
+  }
+}

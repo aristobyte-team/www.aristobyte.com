@@ -93,4 +93,22 @@ export const EN_GB = {
       },
     },
   },
+  compliance: {
+    main: {
+      title: "Compliance & Legal Framework",
+      titleSmall: "Our Commitment to Transparency & Accountability",
+      description:
+        "At AristoByte, we prioritize your rights and data integrity. Browse our compliance documentation to understand how we align with legal, operational, and ethical standards across jurisdictions.",
+      list: {
+        "acceptable-use-policy": "Acceptable Use Policy",
+        "terms-and-conditions": "Terms & Conditions",
+        "cookie-policy": "Cookie Policy",
+        "privacy-policy": "Privacy Policy",
+        "return-policy": "Return Policy",
+        disclaimer: "Disclaimer",
+        dsar: "DSAR",
+        eula: "EULA",
+      },
+    },
+  },
 };

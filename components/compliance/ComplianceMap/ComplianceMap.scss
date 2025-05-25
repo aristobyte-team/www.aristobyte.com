@@ -1,0 +1,117 @@
+@use "../../../styles/settings" as *;
+
+.compliance-map {
+  &__container {
+    @include container;
+  }
+
+  &__document {
+    @include regularShadow;
+    @include container;
+    & {
+      background-color: $white-color;
+      border-radius: $border-radius-small;
+      max-width: 900px;
+    }
+  }
+
+  &__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 50px;
+    max-width: 500px;
+  }
+
+  &__title {
+    @include title;
+    & {
+      color: $black-flat-color;
+      margin: 0 0 5px;
+    }
+  }
+
+  &__title-small {
+    @include titleSmall;
+    & {
+      color: $black-flat-color;
+      margin: 0 0 10px;
+    }
+  }
+
+  &__subtitle {
+    @include subtitle;
+    & {
+      color: $black-flat-color;
+      margin: 0 0 10px;
+    }
+  }
+
+  &__description {
+    @include description;
+    & {
+      color: $black-flat-color;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    li {
+      display: flex;
+    }
+  }
+
+  &__link {
+    align-items: center;
+    background-color: $white-color;
+    border: 1px solid $black-flat-color;
+    border-radius: $border-radius-small;
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    padding: 20px;
+    transition: all 600ms $animation-bubble;
+    width: 100%;
+
+    &:hover {
+      @include regularShadow;
+      & {
+        background-color: $black-color;
+        color: $white-color;
+        transform: scale(1.015);
+
+        .compliance-map__link-icon {
+          svg {
+            height: 24px;
+            width: 24px;
+          }
+        }
+      }
+    }
+
+    &-text {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      min-width: max-content;
+    }
+
+    &-icon {
+      align-items: center;
+      display: flex;
+      justify-content: flex-end;
+      height: 18px;
+      transition: all 300ms $animation-accordion;
+      width: 100%;
+
+      svg {
+        height: 18px;
+        transition: all 300ms $animation-accordion;
+        width: 18px;
+      }
+    }
+  }
+}

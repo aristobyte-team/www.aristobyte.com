@@ -1,3 +1,4 @@
+import ArrowRight from "../public/svg/i_ArrowRight.svg";
 import Button from "../public/svg/i_Button.svg";
 import Card1 from "../public/svg/i_Card_1.svg";
 import Card2 from "../public/svg/i_Card_2.svg";
@@ -11,6 +12,7 @@ import Puzzle from "../public/svg/i_Puzzle.svg";
 import Zap from "../public/svg/i_Zap.svg";
 
 export const Icons = {
+  ArrowRight,
   Button,
   Card1,
   Card2,

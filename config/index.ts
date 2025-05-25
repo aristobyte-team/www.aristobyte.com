@@ -49,4 +49,42 @@ export const Config = {
       ],
     },
   },
+  compliance: {
+    main: {
+      list: [
+        {
+          id: "terms-and-conditions",
+          href: "/compliance/terms-and-conditions",
+        },
+        {
+          id: "cookie-policy",
+          href: "/compliance/cookie-policy",
+        },
+        {
+          id: "privacy-policy",
+          href: "/compliance/privacy-policy",
+        },
+        {
+          id: "return-policy",
+          href: "/compliance/return-policy",
+        },
+        {
+          id: "acceptable-use-policy",
+          href: "/compliance/acceptable-use-policy",
+        },
+        {
+          id: "disclaimer",
+          href: "/compliance/disclaimer",
+        },
+        {
+          id: "eula",
+          href: "/compliance/eula",
+        },
+        {
+          id: "dsar",
+          href: "/compliance/dsar",
+        },
+      ],
+    },
+  },
 };
