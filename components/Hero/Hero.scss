@@ -71,4 +71,8 @@
   &__item {
     display: flex;
   }
+
+  &__link {
+    @include button;
+  }
 }

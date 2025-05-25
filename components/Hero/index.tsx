@@ -1,9 +1,10 @@
 "use client";
 
 import * as React from "react";
+import NextLink from "next/link";
 import { motion } from "framer-motion";
 
-import { Gradient, ScrollLink } from "@/components";
+import { Gradient } from "@/components";
 import { useTranslate } from "@/context";
 
 import "./Hero.scss";
@@ -99,9 +100,9 @@ export const Hero = ({
                 transition={{ duration: 0.4, delay: linksDelay }}
                 viewport={{ once: false }}
               >
-                <ScrollLink to={href} smooth={true} duration={500}>
+                <NextLink href={href} target="_blank" className="hero__link">
                   <span>{t(`${linkText}.${id}`)}</span>
-                </ScrollLink>
+                </NextLink>
               </motion.li>
             ))}
           </ul>

@@ -4,7 +4,6 @@ export const EN_GB = {
     nav: {
       apps: "Apps",
       ui: "AristoByteUI",
-      insights: "Insights",
       contact: "Contact",
     },
   },

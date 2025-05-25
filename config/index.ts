@@ -6,7 +6,6 @@ export const Config = {
     nav: [
       { id: "ui", href: "/ui" },
       { id: "apps", href: "/apps" },
-      { id: "insights", href: "/insights" },
       { id: "contact", href: "/contact" },
     ],
   },
@@ -43,7 +42,7 @@ export const Config = {
     hero: {
       icon: Icons.Logo,
       links: [
-        { id: "instagram", href: "https://isntagram.com/aristo_byte" },
+        { id: "instagram", href: "https://instagram.com/aristo_byte" },
         { id: "facebook", href: "https://facebook.com/aristobyte" },
         { id: "twitter", href: "https://x.com/aristo_byte" },
       ],
