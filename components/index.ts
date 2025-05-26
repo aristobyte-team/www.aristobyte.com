@@ -7,6 +7,8 @@ export { IdeeSection, ComponentStackSection } from "./sections";
 export { AppsPreview } from "./AppsPreview";
 export { UIComponentsPreview } from "./UIComponentsPreview";
 export { NotFound } from "./NotFound";
+export { Splash } from "./Splash";
+export { AppLayout } from "./AppLayout";
 export {
   Disclaimer,
   PrivacyPolicy,

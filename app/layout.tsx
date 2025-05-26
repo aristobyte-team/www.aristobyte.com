@@ -2,7 +2,7 @@ import * as React from "react";
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 
-import { Header } from "@/components";
+import { AppLayout } from "@/components";
 import { HtmlMeta, structuredData, viewport as viewportConfig } from "@/data";
 
 import "./globals.scss";
@@ -138,8 +138,7 @@ export default function RootLayout({
         <body
           className={`${workSans.variable} ${unisonPro.variable} ${righteous.variable}`}
         >
-          <Header />
-          <main>{children}</main>
+          <AppLayout>{children}</AppLayout>
         </body>
       </TranslateProvider>
     </html>

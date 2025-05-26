@@ -1,0 +1,21 @@
+@use "../../styles/settings" as *;
+
+.splash {
+  align-items: center;
+  background: black;
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  height: 100vh;
+  pointer-events: none;
+  position: fixed;
+  width: 100vw;
+  z-index: 9999;
+
+  &__video {
+    object-fit: cover;
+    height: 100%;
+    transform: translate(0, -50px) scale(0.6);
+    width: 100%;
+  }
+}

@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import NextLink from "next/link";
+import { motion } from "framer-motion";
 
 import { Config } from "@config";
 import { useTranslate } from "@/context";
@@ -12,7 +13,13 @@ export const Header = () => {
   const { t } = useTranslate();
 
   return (
-    <header className="header">
+    <motion.header
+      className="header"
+      initial={{ opacity: 0, y: -120 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.4, delay: 0.4 }}
+      viewport={{ once: true }}
+    >
       <div className="header__container">
         <NextLink href="/" className="header__logo">
           <span className="header__logo-icon">
@@ -36,6 +43,6 @@ export const Header = () => {
           </ul>
         </nav>
       </div>
-    </header>
+    </motion.header>
   );
 };
