@@ -1,7 +1,9 @@
 ---
+status: "Backlog"
 name: Documentation
 about: Improvements or additions to documentation
 title: ""
+type: "No-code"
 labels: "documentation"
 assignees: "aristobyte"
 ---

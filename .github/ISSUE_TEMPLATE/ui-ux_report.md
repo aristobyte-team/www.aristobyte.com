@@ -1,8 +1,9 @@
 ---
-name: User story
+status: "Backlog"
+name: UI/UX
 about: New feature to be added
 title: ""
-labels: "user-story"
+type: "UI/UX"
 assignees: "aristobyte"
 ---
 

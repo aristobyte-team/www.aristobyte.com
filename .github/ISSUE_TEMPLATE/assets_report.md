@@ -1,8 +1,10 @@
 ---
+status: "Backlog"
 name: Assets
 about: Assets to be created/added (.mp4, .png, .svg, .mp3...)
 title: ""
-labels: "assets"
+type: "No-code"
+labels: "assets, social-medias"
 assignees: "aristobyte"
 ---
 
