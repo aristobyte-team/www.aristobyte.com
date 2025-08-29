@@ -6,6 +6,7 @@ export const Config = {
     nav: [
       { id: "ui", href: "/ui" },
       { id: "apps", href: "/apps" },
+      { id: "community", href: "/community" },
       { id: "contact", href: "/contact" },
     ],
   },
@@ -54,6 +55,28 @@ export const Config = {
         {
           id: "twitter",
           href: "https://x.com/aristo_byte",
+          type: LinkType.NEXT_LINK,
+        },
+      ],
+    },
+  },
+  community: {
+    hero: {
+      icon: Icons.Logo,
+      links: [
+        {
+          id: "github-discussions",
+          href: "https://github.com/orgs/aristobyte-team/discussions",
+          type: LinkType.NEXT_LINK,
+        },
+        {
+          id: "aristobyte-board",
+          href: "https://github.com/orgs/aristobyte-team/projects/2",
+          type: LinkType.NEXT_LINK,
+        },
+        {
+          id: "open-collective",
+          href: "https://opencollective.com/aristobyte-ui",
           type: LinkType.NEXT_LINK,
         },
       ],

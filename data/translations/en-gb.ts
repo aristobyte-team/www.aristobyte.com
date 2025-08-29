@@ -3,6 +3,7 @@ export const EN_GB = {
     logo: { id: "logo", href: "/" },
     nav: {
       apps: "Apps",
+      community: "Community",
       ui: "AristoByteUI",
       contact: "Contact",
     },
@@ -91,6 +92,20 @@ export const EN_GB = {
       },
     },
   },
+  community: {
+    hero: {
+      title: "Join the AristoByte Community",
+      subtitle: "Code • Collaborate • Contribute",
+      description:
+        "Our community is where ideas turn into reality. Explore our projects, contribute code, and help shape the future of AristoByte.",
+      links: {
+        "github-discussions": "Github Discussions",
+        "open-collective": "OpenCollective",
+        "aristobyte-board": "AristoByte Board",
+      },
+    },
+  },
+
   compliance: {
     main: {
       title: "Compliance & Legal Framework",
