@@ -3,7 +3,7 @@ import * as React from "react";
 import { Hero } from "@/components";
 import { Config } from "@/config";
 
-export default function Home() {
+export default function Community() {
   return (
     <>
       <Hero

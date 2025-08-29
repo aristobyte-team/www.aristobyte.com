@@ -3,8 +3,9 @@ export const EN_GB = {
     logo: { id: "logo", href: "/" },
     nav: {
       apps: "Apps",
-      community: "Community",
       ui: "AristoByteUI",
+      community: "Community",
+      insights: "Insights",
       contact: "Contact",
     },
   },
@@ -105,7 +106,19 @@ export const EN_GB = {
       },
     },
   },
-
+  insights: {
+    hero: {
+      title: "Stay Connected",
+      subtitle: "Insights, stories, and updates — straight from our team",
+      description:
+        "Follow us on social media for the latest updates, behind-the-scenes looks, and deep dives into how we build technology that matters.",
+      links: {
+        instagram: "Instagram",
+        "linked-in": "LinkedIn",
+        facebook: "Facebook",
+      },
+    },
+  },
   compliance: {
     main: {
       title: "Compliance & Legal Framework",

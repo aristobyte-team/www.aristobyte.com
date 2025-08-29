@@ -7,6 +7,7 @@ export const Config = {
       { id: "ui", href: "/ui" },
       { id: "apps", href: "/apps" },
       { id: "community", href: "/community" },
+      { id: "insights", href: "/insights" },
       { id: "contact", href: "/contact" },
     ],
   },
@@ -67,16 +68,44 @@ export const Config = {
         {
           id: "github-discussions",
           href: "https://github.com/orgs/aristobyte-team/discussions",
+          target: "_blank",
           type: LinkType.NEXT_LINK,
         },
         {
           id: "aristobyte-board",
           href: "https://github.com/orgs/aristobyte-team/projects/2",
+          target: "_blank",
           type: LinkType.NEXT_LINK,
         },
         {
           id: "open-collective",
           href: "https://opencollective.com/aristobyte-ui",
+          target: "_blank",
+          type: LinkType.NEXT_LINK,
+        },
+      ],
+    },
+  },
+  insights: {
+    hero: {
+      icon: Icons.Logo,
+      links: [
+        {
+          id: "instagram",
+          href: "https://www.instagram.com/aristo_byte",
+          target: "_blank",
+          type: LinkType.NEXT_LINK,
+        },
+        {
+          id: "linked-in",
+          href: "https://www.linkedin.com/in/aristobyte",
+          target: "_blank",
+          type: LinkType.NEXT_LINK,
+        },
+        {
+          id: "facebook",
+          href: "https://www.facebook.com/aristobyte",
+          target: "_blank",
           type: LinkType.NEXT_LINK,
         },
       ],
